@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="initial-scale=1" />
+  <title>주소록</title>
+  <link rel="stylesheet" href="./styles/contact.css" />
+  <link rel="manifest" href="/manifest.json" />
+  <!-- APPLE App Icons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-pro.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Twitter Lite">
+  <meta name="apple-mobile-web-app-status-bar-style" content="white">
+
+</head>
+<body>
+  <ul class="contacts">
+    <li>조은</li>
+    <li>조은</li>
+    <li>조은</li>
+    <li>조은</li>
+    <li>조은</li>
+    <li>조은</li>
+    <li>조은</li>
+    <li>조은</li>
+    <li>조은</li>
+    <li>조은</li>
+    <li>조은</li>
+    <li>조은</li>
+    <li>조은</li>
+    <li>조은</li>
+  </ul>
+  <section class="profile-card">
+    <header>
+      <h1>Eun Cho</h1>
+      <p>GDG Korea WebTech Organizers</p>
+      <button type="button">
+        <svg version="1.1" id="svg-arrow-down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 24" xml:space="preserve">
+          <polygon style="fill:#000000;" points="20.58,11.584 12.004,20.158 12.004,0 9.996,0 9.996,20.158 1.42,11.584 0,13.004 11,24 22,13.004 "></polygon>
+        </svg>
+      </button>
+    </header>
+    <div class="profile-container">
+      <dl>
+        <dt>Call</dt>
+        <dd>010-0000-0000</dd>
+      </dl>
+      <dl>
+        <dt>E-mail</dt>
+        <dd>apes0123@gmail.com</dd>
+      </dl>
+      <dl>
+        <dt>Company</dt>
+        <dd>NAVER</dd>
+      </dl>
+    </div>
+  </section>
+  <script src="./scripts/contact.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      // 윈도우가 로딩되었을 때
+      window.addEventListener('load', function() {
+        // 서비스워커 (sw.js)를 등록한다.
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+          // 등록이 성공했다면 (즉 설치가 완료되었다면)
+          console.log("등록이 완료되었습니다", registration.scope);
+        }).catch(function(err) {
+          // 등록이 실패했다면
+          console.log("등록이 실패했습니다");
+        })
+      })
+    }
+  </script>
+</body>

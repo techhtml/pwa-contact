@@ -1,0 +1,81 @@
+body {
+  overflow-x: none;
+  margin: 0;
+  font-size: 16px;
+  line-height: 180%;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  color: #333;
+}
+
+dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+dl {
+  padding: 1em 0;
+}
+
+dd {
+  font-size: 1.15em;
+  color: #ff0266;
+}
+
+.contacts,
+.contacts li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts li {
+  padding: 1em;
+  border-bottom: 1px solid #ececec;
+}
+
+.profile-card {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate(100%, 0);
+  background: #ffffff;
+  transition: .3s all ease;
+}
+.profile-card-on {
+  transform: translate(0, 0);
+}
+
+.profile-card header {
+  background: #FFDE03;
+  padding: 5em 1em 2em;
+}
+
+.profile-card header button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 15px;
+}
+
+.profile-card header button svg {
+  width:22px;
+  height:24px;
+  transform: rotate(90deg);
+}
+
+.profile-card header h1 {
+  font-size: 2em;
+}
+
+.profile-container {
+  margin: 1em;
+}
+
+.profile-container dl {
+  border-bottom: 1px solid #ececec;
+}
