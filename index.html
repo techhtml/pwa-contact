@@ -4,7 +4,7 @@
   <meta name="viewport" content="initial-scale=1" />
   <title>주소록</title>
   <link rel="stylesheet" href="./styles/contact.css" />
-  <link rel="manifest" href="/manifest.json" />
+  <link rel="manifest" href="manifest.json" />
   <!-- APPLE App Icons-->
   <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
   <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone.png">
@@ -63,7 +63,7 @@
       // 윈도우가 로딩되었을 때
       window.addEventListener('load', function() {
         // 서비스워커 (sw.js)를 등록한다.
-        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+        navigator.serviceWorker.register('sw.js').then(function(registration) {
           // 등록이 성공했다면 (즉 설치가 완료되었다면)
           console.log("등록이 완료되었습니다", registration.scope);
         }).catch(function(err) {
